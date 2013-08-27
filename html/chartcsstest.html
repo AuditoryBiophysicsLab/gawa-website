@@ -1,0 +1,104 @@
+
+<html><head>
+<link rel="stylesheet" type="text/css" href="/students_13/gawa/style_new.css" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<title>CHART TEST CODE</title>
+</head><body>
+<div id='about_dbstats_container'>
+<div id='about_dbstats_header'>
+<h1>The GAWA Database</h1>
+<p>This page contains stats in the form of text and graphs.  All information was generated and was current at the time the page was loaded.</p>
+</div><!--END ABOUT DBSTATS HEADER CONTAINER-->
+<div id='dbstats_container'>
+<h2> Current Stats on the Number of the Database Entries</h2><ul>
+<h2 class='DBStats'> Number of Animals : 31 </h2>
+<h2 class='DBStats'> Number of Experiments : 65 </h2>
+<h2 class='DBStats'> Number of Images : 66324 </h2>
+</ul></div><!--END DBSTATS CONTAINER-->
+<div id='dbcharts_container'>
+<h2> Graphical Representation of GAWA Data</h2>
+<div id='dbcharts_container_inner'>
+<div id='google_generated_chart'>
+<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+['Tonotopic Location', 'COUNT'],
+['UNDEFINED', 21],['RoundWindow', 15],['FirstTurn', 3],['SecondTurn', 26]
+]);
+var options = {title: 'Experiments by Tonotopic Location'};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div_tono'));
+chart.draw(data, options);
+			}
+			</script>
+<div id='chart_div_tono' class="google-chart"></div>
+</div><!--END GOOGLE GENERATED CHART DIV-->
+<div id='google_generated_chart'>
+<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+['age', 'COUNT'],
+['0.0', 1],['32.0', 1],['33.0', 1],['36.0', 1],['38.0', 1],['40.0', 1],['42.0', 1],['43.0', 1],['44.0', 2],['45.0', 1],['48.0', 1],['49.0', 1],['50.0', 2],['51.0', 1],['52.0', 3],['55.0', 1],['56.0', 2],['57.0', 1],['59.0', 1],['67.0', 1],['72.0', 1],['79.0', 1],['87.0', 1],['106.0', 1],['112.0', 1],['124.0', 1]
+]);
+var options = {title: 'Animals by Ages in Months'};
+var chart = new google.visualization.ColumnChart(document.getElementById('chart_div_animal_age'));
+chart.draw(data, options);
+			}
+			</script>
+<div id='chart_div_animal_age' class="google-chart"></div>
+</div><!--END GOOGLE GENERATED CHART DIV-->
+<div id='google_generated_chart'>
+<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+['Animal Species', 'COUNT'],
+['UNDEFINED', 1],['Mongolian Gerbil', 30]
+]);
+var options = {title: 'Animals by Species'};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div_animal_species'));
+chart.draw(data, options);
+			}
+			</script>
+<div id='chart_div_animal_species' class="google-chart"></div>
+</div><!--END GOOGLE GENERATED CHART DIV-->
+<div id='google_generated_chart'>
+<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+['ROI Exists', 'Number of Experiments'],
+['NO', 18],['YES', 47]
+]);
+var options = {title: 'Experiments With Associated ROI Data', slices: [{color: 'red'}, {color: 'green'}]};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div_exp_roi'));
+chart.draw(data, options);
+			}
+			</script>
+<div id='chart_div_exp_roi' class="google-chart"></div>
+</div><!--END GOOGLE GENERATED CHART DIV-->
+<div id='google_generated_chart'>
+<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+['ROI Exists', 'Number of Images'],
+['No ROI', 31092],['Has ROI', 35232]
+]);
+var options = {title: 'Images With Associated ROI Data', slices: [{color: 'red'}, {color: 'green'}]};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div_img_roi'));
+chart.draw(data, options);
+			}
+			</script>
+<div id='chart_div_img_roi' class="google-chart"></div>
+</div><!--END GOOGLE GENERATED CHART DIV-->
+</div></div><!--END DBCHARTS CONTAINERS-->
+</div><!--END ABOUT DBSTATS CONTAINER-->
+</body>
+</html>

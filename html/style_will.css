@@ -1,0 +1,56 @@
+.info-sheet a {
+        text-decoration:none;
+        color: #000;
+}
+.info-sheet a:hover {
+        border-bottom: 1px dotted #777;
+}
+ul {
+        padding:0;
+}
+li {
+        width:100%;
+}
+#level_freq_img_wrap{
+        width: 100%;
+        margin-left: 20px;
+}
+#experiment_page_levels{
+        float: left;
+        margin-right: 13px;
+        }
+
+#experiment_page_frequencies{
+        float: left;    
+        border-left: 1px dotted #AAA;
+        padding-left:13px;
+}
+#experiment_page_image_info{   
+        float:left;
+        width: 700px;
+}
+#image-group-info{
+        margin-top: 0;
+}
+#image-title{
+        margin-top: 0;
+        border:none;
+}
+
+.info-sheet{
+        margin: 20px;
+}
+li{
+        list-style: none;
+}
+#content_wrapper_inner table tr.selected{
+        background: #40B7C4;
+}
+li {
+        margin: 10px 0 10px 0;
+}
+.info-sheet h2 {
+        border-bottom: 1px dotted #777;
+        color: #333;
+}
+

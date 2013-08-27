@@ -1,0 +1,154 @@
+<div id="help_page">
+<h2><a name="overview">Overview</a></h2>
+<p>
+This page is intended to provide relevant information on the use and
+function of the different features of the GAWA database.</p> 
+
+<iframe src="https://docs.google.com/forms/d/1gaz24pJiK4j_Thre1CjF4najdvaqCi5ypAMHpO71pv4/viewform?embedded=true" width="760" height="522" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<h2><a name="quickstart">Getting Started</a></h2>
+
+<p>GAWA provides several main features: 
+
+<ul>
+<li> There are a number of pre-built common tasks present on a
+persistent sidebar to quickly navigate to commonly used features.
+
+<li> There is a data browsing function, so the full scope of the
+database can be seen and navigated by the user.  
+
+<li> There is the ability to download collections of images,
+animations of images, and post-processor data.  These data are
+assembled on the fly for further analysis.
+
+
+</ul>
+
+<h2><a name="quick_search">Quick Search</a></h2>
+
+<p>Quick searches are a dropdown list of common queries where <i>one</i> parameter in the search query is a user-entered string. 
+
+<p><b>Example:</b> This will return a result of Experiments that were noted
+to have contained Inner Hair Cell/Sterocilia: <br/><img
+src="http://bioed.bu.edu/students_13/gawa/images/quicksearch_1.png" />
+
+
+<p>The search results will resemble the following example Experiment:<br/>
+<img src="http://bioed.bu.edu/students_13/gawa/images/quicksearch_2.png"/>
+
+
+<p> Clicking on a focal level and a frequency will return a link to an image group:
+<br/><img src="http://bioed.bu.edu/students_13/gawa/images/quicksearch_3.png"/>
+
+
+<p>Finally, links are availble to download the list of files returned, the animated collection, and the full-resolution images.
+
+<h2><a name="quick_queries">Quick Queries</a></h2>
+
+<p>Quick queries are selectable from a drop-down menu.  These are all queries with no configurable parameters.
+<br/><img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_1.png"/>
+
+<p>
+<ul>
+<li><h4>All Experiments</h4>
+
+<p>This option returns a list of every experiment currently recorded
+in the database, with relevant metadata.  Clicking on a given
+experiment list item brings up that experiment's full page.
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_allexperiments.png"/>
+
+<li><h4>Experiments without a Tonotopic Location</h4>
+
+<p>This option returns a list of every experiment for which a Tonotopic Location has yet to be assigned.
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_tonoexperiments.png"/>
+
+<li><h4>Experiments without a Region of Interest</h4>
+
+<p>This option returns a list of Experiments for which no Region of Interest post analysis has yet been performed.
+
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_roiexperiments.png"/>
+
+<li><h4>Remarks by Experiment and Focal Plane</h4>
+
+<p> This option returns a list of Image Groups and their focal planes and remarks.
+
+<p>
+<img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_imageremarks.png"/>
+
+<li><h4>Images without ROI</h4>
+
+<p>This option returns a list of Image Groups on which no Region of Interest post analysis has been performed.
+<img src="http://bioed.bu.edu/students_13/gawa/images/quickquery_imagesroi.png"/>
+</ul>
+
+
+<h2><a name="semi_quick_queries">Semi-Quick Queries</a></h2>
+
+<p>Semi-quick queries allow keyword searches on different parameters, predicated on different prior criteria.
+
+<ul>
+<li><h4>Tonotopic Map</h4><br/>
+<img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_tono.png"/>
+<p>This query returns a list of all images for a particular tonotopic region.
+
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_tono_result.png"/>
+
+<li><h4>Image Frequency</h4><br/>
+<img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_freq.png"/>
+
+<p>This query returns a list of all images of a given frequency whose remarks note a particular physiological structure of interest.
+
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_freq_result.png"/>
+
+
+<li><h4>Minimum Levels</h4><br/>
+<img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_level.png"/>
+
+<p>This query returns a list of all experiments that include at least the specified number of focal plane levels. 
+
+<p><img src="http://bioed.bu.edu/students_13/gawa/images/semiquick_level_result.png"/>
+
+
+</ul>
+<h2><a name="browse">Browse</a></h2>
+
+<p>The browse function allows the user to explore the full contents of
+the database, ultimately arriving at an Image Group where the
+individual images can be previewed and downloaded.  The Browse icon is located in the main toobar. 
+
+<p><h4>Refining Results</h4>
+
+<p>For each browsing category, the sidebar is populated with:
+<ol>
+<li>An array of checkboxes that control the display of corresponding columns in the list view.
+<li>An array of dropdown boxes that can be used to narrow search results to only those which match the selected parameter.
+</ol>
+
+<ul>
+<li><h4>Browse by Animal</h4>
+A list of animals is displayed.  Clicking on each animal in the list loads a detail page that shows metadata and all Experiments associated with that Animal, which can then be selected individually. 
+
+<li><h4>Browse by Experiment</h4>
+A list of Experiments is displayed.  Clicking on each Experiment loads a detail page that shows Experiment metadata and a list of all focal planes and frequencies.  Clicking on one focal plane and one frequency will display that Image Group.
+
+<li><h4>Browse by Image</h4>
+A list of every Image is displayed.  Clicking on each Image loads that Image Group's detail page. 
+</ul>
+
+
+ <h2><a name="update">Update</a></h2>
+
+ <p>Users with update rights will be able to update comment and
+ quality assessment metadata for Experiments.  Logging in to the
+ database through the persistent login field at the top right of the
+ page will expose context-sensitive update abilities on relevant
+ pages.
+
+
+
+
+
+
+
+</div>
+<!--END HELP PAGE-->

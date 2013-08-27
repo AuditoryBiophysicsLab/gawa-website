@@ -1,0 +1,54 @@
+<div id="about_page">
+<h1>Welcome to GAWA: Gerbil Aural World Access</h1>
+<h2>Project Information</h2>
+<p>GAWA was developed at Boston University as part of the coursework
+  for <a
+  href="https://www.bu.edu/phpbin/course-search/search.php?page=0&amp;pagesize=10&amp;showdesc=Show&amp;college=&amp;adv=0&amp;nolog=&amp;search=be768&amp;yearsem=2013-SPRG&amp;search_adv_all=be768&amp;search_adv_phrase=&amp;search_adv_exclude=&amp;yearsem_adv=2013-FALL&amp;credits=*&amp;college[]=CAS&amp;college[]=CFA&amp;college[]=CGS&amp;college[]=COM&amp;college[]=ENG&amp;college[]=EOP&amp;college[]=FRA&amp;college[]=GMS&amp;college[]=GRS&amp;college[]=GSM&amp;college[]=LAW&amp;college[]=MED&amp;college[]=MET&amp;college[]=OTP&amp;college[]=PDP&amp;college[]=SAR&amp;college[]=SDM&amp;college[]=SED&amp;college[]=SHA&amp;college[]=SMG&amp;college[]=SPH&amp;college[]=SSW&amp;college[]=STH&amp;college[]=UNI&amp;college[]=XAS&amp;college[]=XRG">
+  BE768</a> in the spring semester of 2013.  Professor <a href="http://tandem.bu.edu/benson.html">Gary Benson</a> was
+  the course instructor. </p>
+<p> Team members:</p>
+<ul>
+  <li>Graham Voysey</li>
+  <li>Ali Jiwani</li>
+  <li>Amauche Erwani</li>
+  <li>Will Chapin</li>
+</ul>
+<p>Advisor: <a href="http://www.bu.edu/bme/people/primary/mountain/">Professor David Mountain</a></p>
+<h2>Project Description</h2>
+<p> In the mammalian auditory system, the cochlea transforms sound, a
+  pressure wave in a medium, into a series of action potentials on the
+  auditory nerve that are ultimately processed in cortex.  The precise
+  mechanisms by which this is accomplished continue to be a matter of
+  great research interest.  Airborne sound pressure waves are first
+  modulated and amplified in the middle ear. The resulting signal
+  propagates in the fluid-filled cochlea, and interacts with the basilar
+  membrane (BM) and the Organ of Corti to result in action potentials
+  propagating to the auditory nerve (AN). </p>
+<p> The mechanical properties, structure, and response of the BM are the
+  focus of a series of experiments on gerbils done in the Auditory
+  Biophysics and Simulation Lab, in the College of Engineering's Hearing
+  Research Center.  A mechanical transducer was used to actuate the BM
+  at frequencies inside its physiological range, and stroboscopic images
+  were taken during stimulation at a variety of focal depths. </p>
+<p> Stroboscopic images were automatically recorded from a camera,
+  attached to a microscope observing the experiment.  The camera is
+  controlled with a National Instruments Data Acquisition card, a C#
+  application, and a collection of MATLAB scripts.  Computer automation
+  of data collection has resulted in large amounts of data. The bulk
+  of the data are images captured from the stroboscopic microscope and
+  waveform data of stimuli and responses, with associated metadata. To
+  date, on the order of 100,000 images and waveforms have been stored on
+  a network drive, totaling in excess of 2 terabytes of data stored on a
+  12 TB Network-attached Storage (NAS) device. </p>
+<p> Approximately 300 animal experiments were performed during the period
+  December 2009 - July 2012, and a relevant subset of them were
+  determined to be of further research value and were included in the database. </p>
+<p> This project created a database to allow the researchers involved with
+  the project to more efficiently sort and qualify prerecorded data for
+  generation of graphics and interpretation of results.
+  Additionally,this provided a mechanism for guests and interested
+  members of the research community to access results for their own
+  analyses. </p>
+<h2>Additional Information</h2>
+ <p>For your learning pleasure, you may review a list of peer-reviewed articles regarding <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=gerbil+cochlea">gerbil cochlea</a> or peruse the <a href="http://www.ncbi.nlm.nih.gov/pubmed?term=Mountain%20DC%5BAuthor%20-%20Last%5D">full list articles published by Dr. Mountain and his lab</a>.
+</div> <!--END ABOUT PAGE-->

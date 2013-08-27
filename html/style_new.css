@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/* CSS Document */
+body, html {
+	margin: 0;
+	padding: 0;
+	border: 0;			/* This removes the border around the viewport in old versions of IE */
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background: #fff;
+	min-width: 800px;    /* Minimum width of layout - remove line if not required */
+	/* The min-width property does not work in old versions of Internet Explorer */
+	font-family: Arial, sans-serif;
+	font-size: 90%;
+}
+img
+{  border-style: none;
+}  /* for old browsers */
+#header{
+    /*background-color: Orange; */ /* helps determine box model if it breaks */
+    height: 70px;
+	background-color:#000;
+	/*background: url(images/headerbg.png) repeat-x;*/
+}
+#header #logo {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: auto;
+}
+#header #navigation {
+	position:absolute;
+	top: 5px;
+	left: 250px;
+	width: auto;
+}
+#header #navigation {
+	font-size: 10px;
+	color: #aba8aa;
+	text-align: center;
+}
+#header #navigation a {
+	color: #aba8aa;
+	text-decoration: none;
+	border: none;
+}
+#header #navigation a:hover { 
+	color: #40b7c4;
+}
+#header #navigation a#current { 
+	color: #40b7c4;
+}
+#header .navbox {
+	float: left;
+	width: 45px;
+	margin: 8px;
+}
+#header #login {
+	text-align: right;
+	padding-top: 5px;
+	color: #9b989a;
+}
+#header #login input[type=text], #header #login input[type=password] {
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #dedbdb;
+	background: #969596;
+	color: #dedbdb;
+	padding: 2px;
+}
+#header #login input[type=image] {
+	border: none;
+	vertical-align: middle;
+	padding: 0px 15px 2px 2px;
+}
+#sidebar_outer{
+    /*background-color: Brown; */ /* helps determine box model if it breaks */
+	/*background: url(images/bg7.png) repeat; */
+	color: #f4854c;
+	background-color: #E5E5E5;
+    position:absolute;
+	border-right: 2px solid #96989a;
+    width: 235px;
+    left:0px;
+    top:0px;
+    bottom:0px;
+	height:100%;
+	overflow:hidden;
+	font-weight: bold;
+	font-size: 15px;
+}
+#sidebar_inner{
+	height:99%;
+    overflow:scroll;
+	padding: 0px 10px 10px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+#sidebar_inner h1 {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+/*.quick-search, .quick-query, .semi-quick-query {
+	border-bottom: 1px dashed #969596;
+	padding: 5px 5px 20px 0px;
+}*/
+#sidebar_inner form {
+	border-bottom: 1px dashed #969596;
+	padding: 5px 5px 20px 0px;
+}
+select {
+	border: 1px solid #d8d8d8;
+	background: transparent;
+	width: 200px;
+	-webkit-apperance: none;
+	padding: 0px 0px 7px 0px;
+}
+.quick-query select, .width170 {
+	width: 165px;
+}
+#sidebar_inner input[type=image] {
+	border: none;
+	vertical-align: middle;
+	padding: 2px 0px 2px 2px;
+}
+#sidebar_inner input[type=text] {
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #969596;
+	color: #000;
+	padding: 2px;
+}
+#sidebar_inner label {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+	font-size: 12px;
+	font-weight:normal;
+}
+
+#helplinkbox ul {
+	list-style-type:none;
+	padding-left: 15px;
+}
+
+#helplinkbox ul li {
+	padding-bottom:5px;
+	font-size: 12px;
+}
+
+#helplinkbox p {
+	font-weight:normal;
+	color:#000;
+	font-size:12px;
+}
+
+#helplinkbox a:link {
+	text-decoration: none;
+	/*font-weight: bolder;*/
+	color: #0066FF;
+}
+#helplinkbox a:visited {
+	text-decoration:none;
+	color:#0066FF;
+}
+#helplinkbox a:hover {
+	border-bottom: 1px dotted ;
+	color:#0066FF;
+}
+#helplinkbox active {
+	text-decoration:underline;
+	color:#0066FF;
+}
+#maincontent_outer{
+    background-color: #FFF;
+    position:absolute; 
+    left:235px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+	height:100%;
+	overflow:hidden;
+}
+#maincontent_inner {
+	height:99%;
+    overflow:scroll;
+	padding: 0px 10px 0px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+#content_wrapper{
+    margin-top:70px;
+    position:absolute; 
+    top:0px; 
+    left:0px;
+    right:0px; 
+    bottom:0px;
+	overflow:hidden;
+}
+#maincontent_inner a:link, #content_wrapper_inner a:link {
+	text-decoration: none;
+	/*font-weight: bolder;*/
+	color: #0066FF;
+}
+#maincontent_inner a:visited, #content_wrapper_inner a:visited {
+	text-decoration:none;
+	color:#0066FF;
+}
+#maincontent_inner a:hover, #content_wrapper_inner a:hover {
+	text-decoration:underline;
+	color:#0066FF;
+}
+#maincontent_inner a:active, #content_wrapper_inner a:active {
+	text-decoration:underline;
+	color:#0066FF;
+}
+#maincontent_inner table, #content_wrapper_inner table { 
+	border-collapse: collapse; 
+	margin: 5px 0;
+}
+#maincontent_inner table td, #content_wrapper_inner table td { 
+	padding: 5px 15px 5px 5px;
+	text-align:center;  /*added for GV */
+	vertical-align:middle;
+}
+#maincontent_inner table th, #content_wrapper_inner table th { 
+	background: #000;
+	color: #fff;
+	padding: 5px 5px;
+	text-align: left;
+}
+#maincontent_inner table tr:nth-child(odd), #content_wrapper_inner table tr:nth-child(odd) { 
+	background-color: #fff; 
+}
+#maincontent_inner table tr:nth-child(even), #content_wrapper_inner table tr:nth-child(even) {
+	background-color: #dedbdb; 
+}
+#maincontent_inner table tr:hover td, #content_wrapper_inner table tr:hover td {
+	background-color: #85cbd3;
+ 	cursor: pointer; 
+}
+#maincontent_inner table tr td a, #content_wrapper_inner table tr td a {
+    display:block;
+    height:100%;
+    width:100%;
+}
+#maincontent_inner #red-warning, #content_wrapper_inner #red-warning {
+	text-align: center;
+	color: #ff0634;	
+	font-size: 20px;
+}
+#maincontent_inner #red-warning, #content_wrapper_inner img #red-warning img { 
+	height: 80px; } /*for scaling the image size */
+#content_wrapper_inner{
+	height:99%;
+    overflow:auto;
+	padding: 0px 10px 0px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+.error {
+	color: #F00;
+}
+#about_dbstats_container {}
+#about_dbstats_header {}
+#dbstats_container {}
+#dbcharts_container_inner {
+	width: 99%;
+	height: 99%;}
+#dbcharts_container_inner #google_generated_chart {
+	float: left;
+	width: 600px;
+	height:500px;}
+#dbcharts_container_inner .google-chart {
+	width: 600px;
+	height:500px;}
+
+#navOpen img {
+	vertical-align: center;
+}
+
+
+/* Results Pages */
+
+.resultPage .info-sheet{
+	margin: 20px;
+}
+.resultPage li{
+	list-style: none;
+}
+#content_wrapper_inner .resultPage table tr.selected{
+	background: #40B7C4; 
+}
+.resultPage table {
+	margin: 0px;
+}
+.resultPage h2 {
+	border-bottom: 1px dotted #777;
+	color: #333;
+	/*margin-left: 15px;*/
+}
+.resultPage .info-sheet a {
+	text-decoration:none;
+	color: #000;	
+}
+#content_wrapper_inner .resultPage .info-sheet a:hover {
+	border-bottom: 1px dotted #777;
+	text-decoration: none;
+}
+.resultPage ul {
+	padding:0;
+}
+
+#experiment-info-list {
+	margin: 0;
+}
+
+.resultPage li {
+	width:100%;
+	margin: 0px 0 15px 0;	
+}
+.resultPage #level_freq_img_wrap{
+	width: 100%;
+	margin-left: 20px;
+}
+.resultPage #experiment_page_levels{
+	float: left;
+	margin-right: 13px;
+	}
+
+.resultPage #experiment_page_frequencies{
+	float: left;	
+	border-left: 1px dotted #AAA;
+	padding-left:13px;
+}
+.resultPage #experiment_page_image_info{	
+	float:left;
+	width: 400px;
+}
+.resultPage #image-group-info{
+	margin-top: 0;
+	float: left;
+}
+.resultPage #image-title{
+	margin-top: 0;
+	border:none;
+}
+
+.resultPage #gif-and-thumb-wrap{
+	float:right;
+	margin: 0px 10px 10px 10px;		
+}
+
+.resultPage #gifWrap{
+	float: right;
+}
+
+.resultPage #image_thumbnails{
+	float: left;
+	margin-right: 3px; 
+}
+
+.resultPage .thumbnail{
+	float: left;
+	clear: left;
+}
+
+.resultPage #butWrap a {
+	display: block;	
+	text-align:right;
+}
+
+#imagePage h2{
+	margin-left: 19px;
+}
+
+#imagePage .resultPage ul ul {
+	margin-left: 40px;
+}
+
+/* CSS FOR ROI PAGE */
+#ROIimage, #ROITable{
+	min-height: 500px;
+}
+#ROIimage {
+	width:75%;
+	min-width:800px;
+	overflow:auto;
+	position:relative;
+	float: right;
+	height:500px;
+}
+#ROIimage a{
+	position:absolute;
+	padding:0;
+	margin:0;
+	display:block; 
+	border-style:solid;
+	border-width:1px;
+	border-color:#f4854c;
+	text-decoration:none; 
+	z-index:20;
+}
+
+
+#ROIimage a span, #ROIimage a:visited span {
+	display:none;
+}
+#ROIimage a.selected{
+	background-color:#99CCFF;
+}
+
+#ROIimage a.mouseover{
+	background:rgba(256, 256, 256, 0.7);
+}
+
+#ROIimage tr .selected{
+	background-color:#99CCFF;
+}
+#ROIimage tr {
+	cursor:default
+}
+#RIOTable {
+	overflow-y:auto;
+	overflow-x:hidden;
+	float:left;
+	margin:0px 10px 0px 0px;
+	position:relative;
+	height:500px;
+}
+
+#RIOTable table tr:nth-child(odd) { 
+	background-color: #fff; 
+}
+
+#RIOTable table tr:nth-child(even) {
+	background-color: #fff; 
+}
+
+#RIOTable table {
+	width: 150px;
+	position:relative;
+}
+
+#RIOTable table a {
+	text-decoration:none;
+}
+
+#ROIinformation {
+	float:none;
+	clear:left;
+	padding: 10px;
+}
+
+#help_page img{
+	border-style: solid;
+	border-color: black;
+}

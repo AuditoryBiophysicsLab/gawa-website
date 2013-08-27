@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GAWA 7</title>
+<link rel="stylesheet" type="text/css" href="style_new.css">
+<!--<style media="screen" type="text/css">
+/* <!-- */
+    /* General styles */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	border: 0;			/* This removes the border around the viewport in old versions of IE */
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background: #fff;
+	min-width: 800px;    /* Minimum width of layout - remove line if not required */
+	/* The min-width property does not work in old versions of Internet Explorer */
+	font-family: Arial, sans-serif;
+	font-size: 90%;
+}
+#header{
+    background-color: Orange;
+    height: 70px;
+	background: url(images/headerbg.png) repeat-x;
+}
+#header #logo {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: auto;
+}
+#header #navigation {
+	position:absolute;
+	top: 5px;
+	left: 250px;
+	width: auto;
+}
+#header #navigation {
+	font-size: 10px;
+	color: #aba8aa;
+	text-align: center;
+}
+#header #navigation a {
+	color: #aba8aa;
+	text-decoration: none;
+	border: none;
+}
+#header #navigation a:hover { 
+	color: #40b7c4;
+}
+#header #navigation a#current { 
+	color: #40b7c4;
+}
+#header .navbox {
+	float: left;
+	width: 45px;
+	margin: 8px;
+}
+#header #login {
+text-align: right;
+padding-top: 5px;
+color: #9b989a;
+}
+#header #login input[type=text] {
+font-family: Helvetica, Arial, sans-serif;
+border: 1px solid #dedbdb;
+background: #969596;
+color: #dedbdb;
+padding: 2px;
+}
+#header #login input[type=image] {
+border: none;
+vertical-align: middle;
+padding: 0px 15px 2px 2px;
+}
+#sidebar_outer{
+    background-color: Brown;
+	background: url(images/bg7.png) repeat;
+	color: #f4854c;
+    position:absolute;
+	border-right: 2px solid #96989a;
+    width: 235px;
+    left:0px;
+    top:0px;
+    bottom:0px;
+	height:100%;
+	overflow:hidden;
+	font-weight: bold;
+	font-size: 15px;
+}
+#sidebar_inner{
+	height:99%;
+    overflow:scroll;
+	padding: 0px 10px 10px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+#sidebar_inner h1 {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.quick-search, .quick-query, .semi-quick-query {
+	border-bottom: 1px dashed #969596;
+	padding: 5px 5px 20px 0px;
+}
+select {
+	border: 1px solid #d8d8d8;
+	background: transparent;
+	width: 200px;
+	-webkit-apperance: none;
+	padding: 0px 0px 7px 0px;
+}
+#sidebar_inner input[type=image] {
+	border: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+#sidebar_inner input[type=text] {
+	font-family: Helvetica, Arial, sans-serif;
+	border: 1px solid #969596;
+	color: #000;
+	padding: 2px;
+}
+#sidebar_inner label {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
+	font-size: 12px;
+	font-weight:normal;
+}
+#maincontent_outer{
+    background-color: Pink;
+    position:absolute; 
+    left:235px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+	height:100%;
+	overflow:hidden;
+}
+#maincontent_inner{
+	height:99%;
+    overflow:scroll;
+	padding: 0px 10px 0px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+#content_wrapper{
+    margin-top:70px;
+    position:absolute; 
+    top:0px; 
+    left:0px;
+    right:0px; 
+    bottom:0px;
+	overflow:hidden;
+}
+#maincontent_inner table { 
+	border-collapse: collapse; 
+	margin: 5px;
+}
+#maincontent_inner table td { 
+	padding: 5px 15px 5px 5px;
+	text-align:center;  /*added for GV */
+	vertical-align:middle;
+}
+#maincontent_inner table th { 
+	background: #000;
+	color: #fff;
+	padding: 2px 5px;
+	text-align: left;
+}
+#maincontent_inner table tr:nth-child(odd) { 
+	background-color: #fff; 
+}
+#maincontent_inner table tr:nth-child(even) {
+	background-color: #dedbdb; 
+}
+#maincontent_inner #red-warning {
+	text-align: center;
+	color: #ff0634;	
+	font-size: 20px;
+}
+#maincontent_inner #red-warning img { 
+	height: 80px; } /*for scaling the image size */
+/* Use this CSS Only when
+#content_wrapper_inner{
+	height:99%;
+    overflow:scroll;
+	padding: 0px 10px 0px 10px; 
+	margin: 10px 0px 10px 0px;
+}
+*/
+</style>-->
+</head>
+
+<body>
+<!--HEADER HERE-->
+<div id="header">
+<div id="login">
+<form name="login" action="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py" method="POST">Sign in: <input type="text" name="username" placeholder="username"><input type="text" name="password" placeholder="password"><input type="image" name="submit" id="submit" src="images/go.png"></form>
+</div>  <!--HEADER LOGIN END-->
+<div id="logo"><img src="images/gawa-logo2s.png" width="208" height="67" alt="logo" /></div> 
+<!--HEADER LOGO END-->
+<div id="navigation">
+<div class="navbox"><a id="current" href="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py?page=home"><img src="images/home.png" /><br>HOME</a></div>
+<div class="navbox"><a  href="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py?page=browse"><img src="images/search.png" /><br>BROWSE</a></div>
+<div class="navbox"><a  href="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py?page=update"><img src="images/edit.png" /><br>UPDATE</a></div>
+<div class="navbox"><a  href="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py?page=help"><img src="images/help.png" /><br>HELP</a></div>
+<div class="navbox"><a  href="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py?page=about"><img src="images/about.png" /><br>ABOUT</a></div>
+</div> <!--HEADER NAVIGATION END-->
+</div> <!--HEADER END-->
+<!--WRAPPER MAIN HERE-->
+<div id="content_wrapper">
+<!--<div id="content_wrapper_inner">--> <!--INNER WRAPPER (CONDITIONAL, TO BE USED IF NO SIDEBAR)-->
+<!--SIDEBAR (OPTIONAL) HERE-->
+<div id="sidebar_outer">
+<div id="sidebar_inner">
+<!--TEST FORM CODE-->
+	<div class='quick-search'>
+	<h1>QUICK SEARCH</h1>
+	<form name="quicksearch" action="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py" method="POST">
+	<select name='quicksearchoption'>
+	<option value='q1'>Images without ROI</option>
+	<option value='q4'>Experiments without ROI</option>	
+	<option value='q2'>All Experiments</option>
+	<option value='q3'>All Images</option>
+	</select>
+    <input name="keyword" value="keyword" type="text" />
+	<input type='image' name='submit' src='images/go.png'>
+	</form>
+	</div>
+<div class='quick-query'>
+	<h1>QUICK QUERIES</h1>
+	<form name="quickquery" action="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py" method="POST">
+	<select name='quickqueryoption'>
+	<option value='q1'>Images without ROI</option>
+	<option value='q4'>Experiments without ROI</option>	
+	<option value='q2'>All Experiments</option>
+	<option value='q3'>All Images</option>
+	</select>
+	<input type='image' name='submit' src='images/go.png'>
+	</form>
+	</div>
+<div class='semi-quick-query'>
+	<h1>SEMI QUICK QUERIES</h1>
+	<form name="semiquickquery" action="http://bioed.bu.edu/cgi-bin/students_13/gawa/gawa.py" method="POST">
+    <label>Find all images whose Tonotopic Map has: </label>
+	<select name='tonotopic map'>
+	<option value='t1'>TCH</option>
+	<option value='t2'>CDIH</option>	
+	<option value='t3'>SDKSD</option>
+	<option value='t4'>CHCs</option>
+	</select>
+    <label>And whose keywords contain: </label>
+    <input name="keyword" value="keyword" type="text" />
+	<input type='image' name='submit' src='images/go.png'>
+	</form>
+	</div>
+<!--END TEST FORM CODE-->
+</div> </div><!--SIDEBAR END-->
+<!--MAIN CONTENT-->
+<div id="maincontent_outer">
+<div id="maincontent_inner">
+<!--TEST TEXT CODE-->
+<h1>TITLE: ABOUT</h1>
+<p>In the mammalian auditory system, the cochlea transforms sound, a pressure wave in a medium, into a series of action potentials on the auditory nerve that are ultimately processed in cortex.  The precise mechanisms by which this is accomplished continue to be a matter of great research interest.  Airborne sound pressure waves are first modulated and amplified in the middle ear. The resulting signal propagates in the fluid-filled cochlea,  and interacts with the basilar membrane (BM) and the Organ of Corti to result in action potentials propagating to the auditory nerve (AN).</p>
+<p>The mechanical properties, structure, and response of the BM are the focus of a series of experiments on gerbils done in the Auditory Biophysics and Simulation Lab, in the College of Engineering's Hearing Research Center.  A mechanical transducer was used to actuate the BM at frequencies inside its physiological range, and stroboscopic images were taken during stimulation at a variety of focal depths.  Approximately 300 animal experiments were performed during the period December 2009 - July 2012.</p>
+<p>It would increase productivity if there was a way to search for all experiments conducted at a specific location, with a certain attribute, or key word in an observation. Taking that a step further and having the query results connected to MATLAB for post processing would be beneficial.</p>
+<p>To that end, this project proposes to create a database to allow the researchers involved with the project to more efficiently sort and qualify prerecorded data for generation of graphics and interpretation of results.  Additionally, a mechanism to manage the addition of new data from future experiments, as well as a means for guests and interested members of the research community to access results for their own analyses, will be developed.</p>
+<!--END TEST TEXT CODE-->
+<!--TEST TABLE CODE-->
+<table border="0">
+  <caption>
+    Sample Table
+  </caption>
+  <thead>
+  <tr>
+    <th>Entry Header 1</th>
+    <th>Entry Header 2</th>
+    <th>Entry Header 3</th>
+    <th>Entry Header 4</th>
+    <th>Entry Header 1</th>
+    <th>Entry Header 2</th>
+    <th>Entry Header 3</th>
+    <th>Entry Header 4</th>
+    <th>Entry Header 1</th>
+    <th>Entry Header 2</th>
+    <th>Entry Header 3</th>
+    <th>Entry Header 4</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>Entry First Line 1</td>
+    <td>Entry First Line 2</td>
+    <td>Entry First Line 3</td>
+    <td>Entry First Line 4</td>
+    <td>Entry First Line 1</td>
+    <td>Entry First Line 2</td>
+    <td>Entry First Line 3</td>
+    <td>Entry First Line 4</td>
+    <td>Entry First Line 1</td>
+    <td>Entry First Line 2</td>
+    <td>Entry First Line 3</td>
+    <td>Entry First Line 4</td>
+  </tr>
+  <tr>
+    <td>Entry Line 1</td>
+    <td>Entry Line 2</td>
+    <td>Entry Line 3</td>
+    <td>Entry Line 4</td>
+    <td>Entry Line 1</td>
+    <td>Entry Line 2</td>
+    <td>Entry Line 3</td>
+    <td>Entry Line 4</td>
+    <td>Entry Line 1</td>
+    <td>Entry Line 2</td>
+    <td>Entry Line 3</td>
+    <td>Entry Line 4</td>
+  </tr>
+  <tr>
+    <td>Entry Last Line 1</td>
+    <td>Entry Last Line 2</td>
+    <td>Entry Last Line 3</td>
+    <td>Entry Last Line 4</td>
+    <td>Entry Last Line 1</td>
+    <td>Entry Last Line 2</td>
+    <td>Entry Last Line 3</td>
+    <td>Entry Last Line 4</td>
+    <td>Entry Last Line 1</td>
+    <td>Entry Last Line 2</td>
+    <td>Entry Last Line 3</td>
+    <td>Entry Last Line 4</td>
+  </tr>
+</table>
+<!--END TEST TABLE CODE-->
+<!--TEST BIG TABLE CODE-->
+<table border="0">
+  <caption>
+    Sample Table
+  </caption>
+  <thead>
+  <tr>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+    <th>EntryHeader1</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+    <td>EntryFirstLine</td>
+  </tr>
+  <tr>
+    <td><a href="#">I'mALinkNow</a></td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+    <td>EntryLine</td>
+  </tr>
+  <tr>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+    <td>EntryLastLine</td>
+  </tr>
+</table>
+<!--END TEST BIG TABLE CODE-->
+</div> </div><!--MAIN CONTENT END-->
+<!--</div>--> <!--INNER WRAPPER (CONDITIONAL) END-->
+</div> <!--WRAPPER MAIN END-->
+<div style="clear:both;"></div>
+</body>
+</html>
